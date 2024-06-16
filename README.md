@@ -21,9 +21,9 @@ source build/envsetup.sh; export ALLOW_MISSING_DEPENDENCIES=true; lunch twrp_r11
 ```
 
 ## Not working
-Decryption
-Vibration
-Battery level
+Decryption <br/>
+Vibration <br/>
+Battery level 
 
 ## Device picture
 
