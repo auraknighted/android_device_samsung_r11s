@@ -1,0 +1,6 @@
+ro.display.series=Samsung Galaxy S23 FE
+ro.product.board=s5e9925
+ro.board.platform=s5e9925
+sys.usb.controller=10b00000.dwc3
+ro.boot.dynamic_partitions=true
+ro.boot.boot_devices=11100000.ufs
