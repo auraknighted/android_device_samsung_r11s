@@ -1,15 +1,15 @@
 # mount point			fstype		device		device2			flags
 # Logical erofs partitions
-system		/system         erofs							avb=vbmeta,logical,first_stage_mount
-vendor		/vendor		erofs							avb,logical,first_stage_mount
-product		/product	erofs							avb,logical,first_stage_mount
-odm		/odm		erofs							avb,logical,first_stage_mount
+system				/system         erofs					avb=vbmeta,logical,first_stage_mount
+vendor				/vendor		erofs					avb,logical,first_stage_mount
+product				/product	erofs					avb,logical,first_stage_mount
+odm				/odm		erofs					avb,logical,first_stage_mount
 
 # Logical f2fs partitions
-system		/system		f2fs							avb=vbmeta,logical,first_stage_mount
+system				/system		f2fs					avb=vbmeta,logical,first_stage_mount
 
 # Logical ext4 partitions
-system		/system         ext4							avb=vbmeta,logical,first_stage_mount
+system				/system         ext4					avb=vbmeta,logical,first_stage_mount
 
 # Symlinked partitions
 /system_image			emmc		/dev/block/by-name/system		flags=backup=0;flashimg;display="System Image"
