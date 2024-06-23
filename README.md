@@ -20,11 +20,6 @@ Display | Dynamic AMOLED 2X, 120Hz, HDR10+
 source build/envsetup.sh; export ALLOW_MISSING_DEPENDENCIES=true; lunch twrp_r11s-eng; mka recoveryimage
 ```
 
-## Not working
-Decryption <br/>
-Vibration <br/>
-Battery level 
-
 ## Device picture
 
 ![Samsung Galaxy S23 FE](https://images.samsung.com/is/image/samsung/p6pim/mx/feature/164868481/mx-feature--nbsp--538749287?$FB_TYPE_I_JPG$ "Samsung Galaxy S23 FE")
