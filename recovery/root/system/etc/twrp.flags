@@ -21,7 +21,6 @@ system				/system         ext4					avb=vbmeta,logical,first_stage_mount
 /boot				emmc		/dev/block/by-name/boot			flags=backup=1;flashimg;display="Boot"
 /recovery			emmc		/dev/block/by-name/recovery		flags=backup=1;flashimg;display="Recovery"
 /metadata			ext4		/dev/block/by-name/metadata		flags=backup=1;wipeingui;display="Metadata"
-/data				f2fs		/dev/block/by-name/userdata		flags=length=-20480
 /cache				ext4		/dev/block/by-name/cache		flags=backup=1;display="Cache"
 /efs				ext4		/dev/block/by-name/sec_efs		flags=backup=1;display="EFS"
 /sec_efs			ext4		/dev/block/by-name/sec_efs		flags=backup=1;display="Sec EFS"
