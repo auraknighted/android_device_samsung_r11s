@@ -12,26 +12,26 @@ system				/system		f2fs					avb=vbmeta,logical,first_stage_mount
 system				/system         ext4					avb=vbmeta,logical,first_stage_mount
 
 # Symlinked partitions
-/system_image			emmc		/dev/block/by-name/system		flags=backup=0;flashimg;display="System Image"
-/vendor_image			emmc		/dev/block/by-name/vendor		flags=backup=0;flashimg;display="Vendor Image"
-/product_image			emmc		/dev/block/by-name/product		flags=backup=0;flashimg;display="Product Image"
-/odm_image			emmc		/dev/block/by-name/odm			flags=backup=0;flashimg;display="Odm Image"
+/system_image			emmc		/dev/block/by-name/bootdevice/system		flags=backup=0;flashimg;display="System Image"
+/vendor_image			emmc		/dev/block/by-name/bootdevice/vendor		flags=backup=0;flashimg;display="Vendor Image"
+/product_image			emmc		/dev/block/by-name/bootdevice/product		flags=backup=0;flashimg;display="Product Image"
+/odm_image			emmc		/dev/block/by-name/bootdevice/odm			flags=backup=0;flashimg;display="Odm Image"
 
 # Physical partitions
-/boot				emmc		/dev/block/by-name/boot			flags=backup=1;flashimg;display="Boot"
-/recovery			emmc		/dev/block/by-name/recovery		flags=backup=1;flashimg;display="Recovery"
-/metadata			ext4		/dev/block/by-name/metadata		flags=backup=1;wipeingui;display="Metadata"
-/data				f2fs		/dev/block/by-name/userdata		flags=length=-20480
-/cache				ext4		/dev/block/by-name/cache		flags=backup=1;display="Cache"
-/efs				ext4		/dev/block/by-name/sec_efs		flags=backup=1;display="EFS"
-/sec_efs			ext4		/dev/block/by-name/sec_efs		flags=backup=1;display="Sec EFS"
-/modem				emmc		/dev/block/by-name/radio		flags=backup=1;display="Modem"
-/dtbo				emmc		/dev/block/by-name/dtbo			flags=backup=1;flashimg;display="Dtbo"
-/optics_image			emmc		/dev/block/by-name/optics		flags=backup=1;flashimg;display="Optics Image"
-/prism_image			emmc		/dev/block/by-name/prism		flags=backup=1;flashimg;display="Prism Image"
-/vbmeta_system			emmc		/dev/block/by-name/vbmeta_system
-/vendor_boot			emmc		/dev/block/by-name/vendor_boot		flags=backup=1;flashimg;display="Vendor Boot"
-/vbmeta_samsung			emmc		/dev/block/by-name/vbmeta_samsung
+/boot				emmc		/dev/block/by-name/bootdevice/boot			flags=backup=1;flashimg;display="Boot"
+/recovery			emmc		/dev/block/by-name/bootdevice/recovery		flags=backup=1;flashimg;display="Recovery"
+/metadata			ext4		/dev/block/by-name/bootdevice/metadata		flags=backup=1;wipeingui;display="Metadata"
+/data				f2fs		/dev/block/by-name/bootdevice/userdata		flags=length=-20480
+/cache				ext4		/dev/block/by-name/bootdevice/cache		flags=backup=1;display="Cache"
+/efs				ext4		/dev/block/by-name/bootdevice/sec_efs		flags=backup=1;display="EFS"
+/sec_efs			ext4		/dev/block/by-name/bootdevice/sec_efs		flags=backup=1;display="Sec EFS"
+/modem				emmc		/dev/block/by-name/bootdevice/radio		flags=backup=1;display="Modem"
+/dtbo				emmc		/dev/block/by-name/bootdevice/dtbo			flags=backup=1;flashimg;display="Dtbo"
+/optics_image			emmc		/dev/block/by-name/bootdevice/optics		flags=backup=1;flashimg;display="Optics Image"
+/prism_image			emmc		/dev/block/by-name/bootdevice/prism		flags=backup=1;flashimg;display="Prism Image"
+/vbmeta_system			emmc		/dev/block/by-name/bootdevice/vbmeta_system
+/vendor_boot			emmc		/dev/block/by-name/bootdevice/vendor_boot		flags=backup=1;flashimg;display="Vendor Boot"
+/vbmeta_samsung			emmc		/dev/block/by-name/bootdevice/vbmeta_samsung
 
 # Removable storage
 /usb-otg			auto		/dev/block/sdf1	/dev/block/sdf		flags=display="USB-OTG";storage;wipeingui;removable
