@@ -57,6 +57,8 @@ on fs
     chown root system /dev/block/param
     chmod 0666 /dev/block/param
 
+    export ANDROID_ROOT /system_root
+
 # Set watchdog timer to 30 seconds and fed it every 10 seconds to get a 20 second margin
 service watchdogd /system/bin/watchdogd 10 20
     class core
